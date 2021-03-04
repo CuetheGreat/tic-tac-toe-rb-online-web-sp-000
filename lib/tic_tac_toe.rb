@@ -152,7 +152,7 @@ def turn(board)
   index = input_to_index(input)
   
   if valid_move?(board,index)
-    move(board,index,"X")
+    move(board,index,current_player(board))
   else
     turn(board)
   end
@@ -160,10 +160,5 @@ def turn(board)
 end
 
 def play(board)
-  game = over?(board)
-  while game do
-    display_board(board)
-    turn(board)
-    game = over?(board)
-  end
+  turn()
 end
