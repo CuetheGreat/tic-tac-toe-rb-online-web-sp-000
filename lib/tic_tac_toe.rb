@@ -167,5 +167,5 @@ def play(board)
     puts "Congratulations #{winner(board)}!"
   elsif darw?(board)
     puts "Cat's Game!"
-  elsif 
+  end
 end
