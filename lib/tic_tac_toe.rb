@@ -163,7 +163,8 @@ def play(board)
   while !over?(board) do
     turn(board)
   end
-  if winner(board)
+  if won?(board)
+    puts 
   elsif darw?(board)
     puts "Cat's Game!"
   elsif 
